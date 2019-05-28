@@ -1,0 +1,1 @@
+const userapp = angular.module('user',['ngRoute','btford.socket-io']);

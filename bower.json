@@ -1,0 +1,23 @@
+{
+  "name": "anglar Server 1",
+  "authors": [
+    "aadish <aadishjain196@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-route": "^1.7.8",
+    "socket.io-client": "^2.2.0",
+    "angular-socket-io": "^0.7.0"
+  }
+}

@@ -1,0 +1,1 @@
+userapp.constant('SERVER','http://localhost:4560');

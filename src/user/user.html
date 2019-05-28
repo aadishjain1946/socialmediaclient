@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test project</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="../login/logo.css">
+    <link rel="stylesheet" href="../assets/loader.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="../../bower_components/angular/angular.min.js"></script>
+    <script src="../../bower_components/angular-route/angular-route.min.js"></script>
+    <script src="userapp.js"></script>
+    <script src="../utils/urlconstantuser.js"></script>
+    <script src="./usermodel.js"></script>
+    <script src="usercontroller.js"></script>
+    <script src="./viewscontroller/changepasscontroller.js"></script>
+    <script src="routes.js"></script>
+    <script src="../../bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script src="../../bower_components/angular-socket-io/socket.min.js"></script>
+    <script src="./socket.js"></script>
+
+</head>
+
+<body ng-app='user'>
+    <div id="container" ng-controller="usercontroller">
+        <header id="header">
+            <div class="container">
+                <div class="row space">
+                    <div class="cont">
+                        <h1>hello <span id="Name"></span>,</h1>
+                    </div>
+                    <div class="content row">
+                        <!-- <div class="h-btn">
+                            <a ng-href="#/changepass" id="UCpass" class="btn btn-outline-success">Change
+                                password</a>
+                        </div> -->
+                        <div class="h-btn">
+                            <button class="btn btn-outline-danger" role="button" aria-pressed="true"
+                                ng-click='logout()'>Logout</button>
+                        </div>
+                        <div class="h-btn">
+                            <a href="views/upload.html" class="btn btn-outline-primary" target="_blank">Upload Image</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div class="row" id="main">
+                <div class="col-lg-8 col-mg-9 col-sm-10 rightcont">
+                    <ng-view></ng-view>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

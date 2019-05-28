@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="data">
+        <h1 class="fe">Feeds</h1>
+        <div id="card" ng-repeat="data in imgdata">
+            <div id="head"><i class="fas fa-child" id="child"></i>
+                <h2>{{data.userId}}</h2>
+            </div>
+            <div id="image">
+                <div class="card-img">
+                    <img ng-src={{data.imageId}} alt="">
+                </div>
+            </div>
+            <div id="foot">
+                <!-- <i class="fas fa-heart" id="heart"></i> -->
+                <!-- <i class="far fa-thumbs-up like"></i> -->
+                <button class="btn" gh="{{data.imageID}}" id="{{data.userId}}" ng-click="sockettalk($event)">Like<span
+                        class="lnum" ng-model="like">{{data.likes}}</span></button>
+                <button class="btn" gh="{{data.imageID}}" id="{{data.userId}}" ng-click="supersockettalk($event)">Superlike<span class="lnum" ng-model="superlike">{{data.superlikes}}</span></button>
+                <button class="btn" id="{{data.userId}}" ng-click='block($event)'><i class="fas fa-exclamation-triangle"
+                        id="block"></i>BLOCK USER</button>
+            </div>
+        </div>
+    </div>
+</div>

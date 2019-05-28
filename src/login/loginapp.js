@@ -1,0 +1,1 @@
+const loginapp = angular.module('login',[]);
